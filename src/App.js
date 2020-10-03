@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import './tailwind.css'
 import Home from './Views/Home'
 import About from "./Views/About";
+import Product from "./Views/Product";
 // import ConterExample from './Components/CounterExample'
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
 
             <Route path="/about">
               <About />
+            </Route>
+
+            <Route path="/product/:id">
+              <Product />
             </Route>
 
           </Switch>
