@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTransition, animated } from "react-spring";
+import NavigationMenu from './NavigationMenu'
 
 // mask className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
 // menu className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow"
@@ -55,17 +56,11 @@ function Navigation() {
                   className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow p-3"
                   onClick={() => setShowMenu(false)}
                 >
-                  <span className="font-bold">
-                      The Menu
-                  </span>
-                  <ul>
-                      <li>
-                          Home
-                      </li>
-                      <li>
-                          About
-                      </li>
-                  </ul>
+
+                  <NavigationMenu
+                    closeMenu={(() => setShowMenu(false))}
+                  />
+
                 </animated.div>
               )
           )
