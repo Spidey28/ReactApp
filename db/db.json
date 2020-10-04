@@ -1,0 +1,10 @@
+{
+  "sample": {
+    "id": 1,
+    "name": "API Works!"
+  },
+  "authentication": {
+    "response": true,
+    "error": "Successfully Processed"
+  }
+}

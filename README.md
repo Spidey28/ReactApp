@@ -12,6 +12,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `Mock API`
+Create a folder on project directory db and create JSON file db.json
+Install command `npm install -g json-server`
+To run Json-server `json-server --watch db.json`
+
+For more info: Open[https://github.com/typicode/json-server](https://github.com/typicode/json-server)
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
