@@ -30,10 +30,15 @@ class Home extends React.Component {
       'username': this.state.userName,
       'password': this.state.password
     }
-    axios.get("http://localhost:3000/authentication", credentials)
-          .then(response => {
-            this.setState({isLoggedIn: true})
-          })
+
+    axios({
+      method: "get",
+      url: "http://localhost:3000/authentication",
+      data: credentials,
+      headers: {
+        'content-type': 'application/json'
+      }
+    }).then((response) => this.setState({ isLoggedIn: true }));
   }
 
   render() {
